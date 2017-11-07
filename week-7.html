@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en">   
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,8 @@
         <link href="bootstrap/media/theme.css" rel="stylesheet">
 
 
+
+
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -37,19 +39,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Leo Zhuang's web</a>
+				<a class="navbar-brand" href="index.html">Leo Zhuang's web</a>
 			</div>
           
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Progress<span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li class="dropdown active">
+						<a href="week-2.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Progress<span class="caret"></span></a>
+						<ul class="dropdown-menu">
 							<li><a href="week-1.html">week-1</a></li>
-							<li><a href="week-2.html">week-2</a></li>
+							<li><a href="#">Another action</a></li>
 							<li><a href="#">Something else here</a></li>
 							<li role="separator" class="divider"></li>
 							<li class="dropdown-header">Nav header</li>
@@ -62,85 +64,60 @@
 			</div>
 		</nav>
         
-			<div class = "page-header">
-				<h1 align = "center">Welcome to Leo Zhuang's Project!</h1>
-			</div>
-			<div class = "row">
-				<div class = "col-md-6" a>
-					<img src = "./picture/my_perasonal_photo.jpg"
-						 style = "display:block; margin:10px auto;"
-						 alt = "my portrait"
-						 width = "200">
-				</div>
-			</div>
+		<div class = "row">
+			<h2 align = "center">Welcome to Leo Zhuang's Project!</h2>
+		</div>
 
 		<div class="container theme-showcase" role="main">
-			<div>
-				<a href="week-1.html"><button type="button" class="btn btn-lg btn-default">To Week 1: intro</button></a>
-				<a href="week-2.html"><button type="button" class="btn btn-lg btn-default">To Week 2: make a name stand</button></a>
-				<a href="week-3.html"><button type="button" class="btn btn-lg btn-default">To Week 3: make a 3D sculpture</button></a>
-				<a href="week-4.html"><button type="button" class="btn btn-lg btn-default">To Week 4: scan it and polish it!</button></a>
-				<a href="week-6.html"><button type="button" class="btn btn-lg btn-default">To Week 6: make a PCB before soldering</button></a>
-				<a href="week-7.html"><button type="button" class="btn btn-lg btn-default">To Week 7: soldering!</button></a>
+			<div id = "about" class="page-header">
+				<h3>Doucments on the seventh week:</h3>
 			</div>
-			
-			<div id="about"class="row">
-				<div class="col-md-3">
-					<h3>About</h3>
+			<div class="well">
+				<p>Well, as scheduled, the task is to solder the electric components onto the printed PCB. But first they are the list of the components:</p>
+				<div class="col-sm-6">
+					<ol>
+						<li>mirco controller: ATMEEA328 (&times; 1)</li>
+						<li>socket (&times; 1)</li>
+						<li>16MHz crystal (&times; 1)</li>
+						<li>capacitor
+							<ul>
+								<li>22uF (&times; 2)</li>
+								<li>0.1uF (&times; 3)</li>
+								<li>10uF (&times; 1)</li>
+							</ul></li>
+						<li>resistor
+							<ul>
+								<li>10k&Omega; (&times; 1)</li>
+								<li>220&Omega; (&times; 2)</li>
+							</ul></li>
+						<li>button for reset</li>
+						<li>LED
+							<ol>
+								<li>red (&times; 1)</li>
+								<li>green (&times; 1)</li>
+							</ol></li>
+						<li>8-pin female header (&times; 2)</li>
+						<li>6-pin female header (&times; 3)</li>
+						<li>power connector (&times; 1)</li>
+					</ol>
 				</div>
-				<div class="jumbotron">
-					<p>Coming into this course is really a great fun, and help me learned a lot about what the design will be like.</p>
-					<img src="picture/in_the_class.jpg"
-						 width="300"
-						 style = "display:block; margin:10px auto;">
+				<div class="col-sm-6">
+					<img src="picture/week-7/electric_components.png"
+						 width="200"
+					 	style="display:block; margin:10px auto;">
 				</div>
-				
-				<div class="col-md-3">
-					<h3>Skills on me</h3>
-				</div>
-				<div class="col-md-6">
-					<table class="table">
-						<tbody>
-							<tr>
-								<td><h5>language</h5></td>
-								<td>C++</td>
-								<td>python</td>
-								<td>C#</td>
-							</tr>
-							<tr>
-								<td><h5>achivements</h5></td>
-								<td>robot arm</td>
-								<td>robot follow line</td>
-								<td>wooden bench</td>
-							</tr>
-							<tr>
-								<td>intrest on</td>
-								<td>auto mechine</td>
-								<td>UAV</td>
-								<td><p>"I can't really came up with anything,</p><p>would you like to help me?"</p></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+				<p>After finding all the components, let's start soldering. Although I have soldered before, the "terrible" PCB still didn't make the soldering perfect. The holes that the milling machine drilled were not exactly in the middle of the copper. some of them are even going out of the boarder. Then, the tin didn't cover around all the pin.</p>
+				<p>And I have cut all the pins using the scissors, which ripped off only 2 solder joints luckily. Then I re-soldered it using the iron left from the pins.</p>
+				<img src="picture/week-7/slodering_flaws.png"
+					 width="500"
+					 style="display:block; margin:10px auto;">
+				<p>And this is the final board coming out of my hands! :)</p>
+				<img src="picture/week-7/finished_product.png"
+					 width="500"
+					 style="display:block; margin:10px auto;">
 			</div>
-			
-            	
-			
-			<div id="contact" class="panel panel-default">
-            	<div class="panel-heading">
-					<h3 class="panel-title">Contact</h3>
-            	</div>
-            	<div class="panel-body">
-					<p>phone: +86 18221231813</p>
-					<p>Email: zhuangzw@shanghaitech.edu.cn</p>
-				</div>
-          	</div>
-			
-			
-			
-			
 		</div>
-        
+		
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->

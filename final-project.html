@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en">   
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,8 @@
         <link href="bootstrap/media/theme.css" rel="stylesheet">
 
 
+
+
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -37,19 +39,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Leo Zhuang's web</a>
+				<a class="navbar-brand" href="index.html">Leo Zhuang's web</a>
 			</div>
           
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="index.html#about">About</a></li>
 					<li><a href="index.html#contact">Contact</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Progress<span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li class="dropdown active">
+						<a href="week-2.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Progress<span class="caret"></span></a>
+						<ul class="dropdown-menu">
 							<li><a href="week-1.html">week-1</a></li>
-							<li><a href="week-2.html">week-2</a></li>
+							<li><a href="#">Another action</a></li>
 							<li><a href="#">Something else here</a></li>
 							<li role="separator" class="divider"></li>
 							<li class="dropdown-header">Nav header</li>
@@ -62,86 +64,42 @@
 			</div>
 		</nav>
         
-			<div class = "page-header">
-				<h1 align = "center">Welcome to Leo Zhuang's Project!</h1>
-			</div>
-			<div class = "row">
-				<div class = "col-md-6" a>
-					<img src = "./picture/my_perasonal_photo.jpg"
-						 style = "display:block; margin:10px auto;"
-						 alt = "my portrait"
-						 width = "200">
-				</div>
-			</div>
+		<div class = "row">
+			<h2 align = "center">Welcome to Leo Zhuang's Project!</h2>
+		</div>
 
 		<div class="container theme-showcase" role="main">
-			<div>
-				<a href="week-1.html"><button type="button" class="btn btn-lg btn-default">To Week 1: intro</button></a>
-				<a href="week-2.html"><button type="button" class="btn btn-lg btn-default">To Week 2: make a name stand</button></a>
-				<a href="week-3.html"><button type="button" class="btn btn-lg btn-default">To Week 3: make a 3D sculpture</button></a>
-				<a href="week-4.html"><button type="button" class="btn btn-lg btn-default">To Week 4: scan it and polish it!</button></a>
-				<a href="week-6.html"><button type="button" class="btn btn-lg btn-default">To Week 6: make a PCB before soldering</button></a>
-				<a href="week-7.html"><button type="button" class="btn btn-lg btn-default">To Week 7: soldering!</button></a>
-				<a href="final-project.html"><button type="button" class="btn btn-lg btn-default">Final Project! (I don't know waht it is now)</button></a>
+			<div id = "about" class="page-header">
+				<h3>Doucments on the final project:</h3>
 			</div>
-			
-			<div id="about"class="row">
-				<div class="col-md-3">
-					<h3>About</h3>
-				</div>
-				<div class="jumbotron">
-					<p>Coming into this course is really a great fun, and help me learned a lot about what the design will be like.</p>
-					<img src="picture/in_the_class.jpg"
-						 width="300"
-						 style = "display:block; margin:10px auto;">
-				</div>
-				
-				<div class="col-md-3">
-					<h3>Skills on me</h3>
-				</div>
-				<div class="col-md-6">
-					<table class="table">
-						<tbody>
-							<tr>
-								<td><h5>language</h5></td>
-								<td>C++</td>
-								<td>python</td>
-								<td>C#</td>
-							</tr>
-							<tr>
-								<td><h5>achivements</h5></td>
-								<td>robot arm</td>
-								<td>robot follow line</td>
-								<td>wooden bench</td>
-							</tr>
-							<tr>
-								<td>intrest on</td>
-								<td>auto mechine</td>
-								<td>UAV</td>
-								<td><p>"I can't really came up with anything,</p><p>would you like to help me?"</p></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+			<div class="well">
+				<h2>Idea:</h2>
+				<p>When I was soldering on the class, a problem came to me. As I was always do the project myself, or seperately with people, how can I document and take the picture for what I am doing?</p>
+				<p>Then, an "easy" idea came to me. I can make a more protable camera or a wearable camera, which can help me record what I saw and for the document.</p>
+				<h2>Investigation:</h2>
+				<p>After searching online, there are a few posts that are doing the similar project. From <a herf="https://raspberrypi.stackexchange.com/questions/26714/can-i-record-a-24-hour-video-on-the-raspberry-pi-with-camera-module">a website</a> it tells me why it is not practical simply record a video with the shanghaino board (aka arduino mini pro board). So I gave up on the video plan. But after more investigation, I saw someone asked about almost the same project from <a herf="http://forum.arduino.cc/index.php?topic=8028.0">arduino community</a>, which gave me a lot of confidence.</p>
 			</div>
-			
-            	
-			
-			<div id="contact" class="panel panel-default">
-            	<div class="panel-heading">
-					<h3 class="panel-title">Contact</h3>
-            	</div>
-            	<div class="panel-body">
-					<p>phone: +86 18221231813</p>
-					<p>Email: zhuangzw@shanghaitech.edu.cn</p>
-				</div>
-          	</div>
-			
-			
-			
-			
+			<div class="well">
+				<h3>Day 1: the camera module arrived</h3>
+				<p>Before the camera module arrived, I did some search online to find out how to hack with the module, or <a href="http://blog.sina.com.cn/s/blog_85ffdf8a0102vni0.html">how to connect the camera module (ov7670) to the shanghaino</a>. By downloading the packages on that website and did as told, the compiler report an error.</p>
+				<img src="picture/final-project/ov7670lib-compile-error.PNG"
+					 width="600"
+					 style="display:block; margin:10px auto;">
+				<p>Basically, it means the function in cpp file doesn't match the declaration in the headfile. So I took a risk by changing the declaration on the function in the head file. (the code on the left is the old one) And I didn't change the code in the zip file.</p>
+				<img src="picture/final-project/ov7670lib-change-head-file.PNG"
+					 width="600px"
+					 style="display:block; margin:10px auto;">
+				<p>Then, the arduino IDE finished compiling with some warnings:</p>
+				<img src="picture/final-project/ov7670lib-test-compile-warnings.PNG"
+					 width="600"
+					 style="display:block; margin:10px auto;">
+				<p>After upload the code into the shanghaino board, the serial monitor shows what was expected (the SD card shield did not arrived yet)</p>
+				<img src="picture/final-project/camera_test1_serial_result.PNG"
+					 width="400"
+					 style="display:block; margin:10px auto;">
+			</div>
 		</div>
-        
+		
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->

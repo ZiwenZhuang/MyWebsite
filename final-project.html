@@ -111,6 +111,38 @@
 					 style="display:block; margin:auto">
 				<p>As the picture shown, there is exactly the same as the back of the camera on the website! So, I went crazy and re-buy the camera module and waiting...</p>
 			</div>
+			<div class="well">
+				<h3>Day 3: input -> output</h3>
+				<p>By waiting for the modules for shanghaino, I test some part of the compoment from the classroom. I found the 4 digits segment display, but I couldn't find the data sheet for it. So, I test it on my own. And the diagram for the display is as follows:</p>
+				<img src="picture/final-project/4digits-diaplay1.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<img src="picture/final-project/4digits-diaplay2.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<p>And here is the table for controlling the display. But the only way to show all 4 digits is to refresh the number one by one.</p>
+				<img src="picture/final-project/4digits-diaplay-table.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<p>Then, I wrote <a href="code/DigDisplay.zip">a library</a> for the controll of the display, which you can download and put it in the arduino IDE. But I will not update it further.</p>
+			</div>
+			<div class="well">
+				<h3>Day 4: finished circuit</h3>
+				<p>Finally, I got all the necessary components I need which are:</p>
+				<ol>
+					<li>Arduino mini pro board</li>
+					<li>The ov_0706 camera module</li>
+					<li>The SD card shield</li>
+					<li>The ultrasonic sensor</li>
+				</ol>
+				<p>Then, I can start testing the structure</p>
+				<p>By found the graph online and modified the connection as I need, the connections for the pins on all these devices are as follows: (some of the power connections are ignored)</p>
+				<img src="picture/final-project/final_board_connection.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<p>Then everything goes well, and I wrote the <a href="/code/final_for_test.ino"><strong>code</strong></a> for the final product.</p>
+				<p>Maybe at the final product, I will add a feature to show the statue using a buzzer, to let the user know whether the picture was token sucessfully.</p>
+			</div>
 		</div>
 		
         <!-- Bootstrap core JavaScript

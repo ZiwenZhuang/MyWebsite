@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="../../favicon.ico">
+
+        <title>Make a camera Head Band</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap theme -->
+        <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+
+	          <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	  
+        <!-- Custom styles for this template -->
+        <link href="bootstrap/media/theme.css" rel="stylesheet">
+
+
+
+
+        <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+      	<div class="container">
+        	<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">Leo Zhuang's web</a>
+			</div>
+          
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li class="dropdown active">
+						<a href="week-2.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Progress<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="week-1.html">week-1</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li role="separator" class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+        
+		<div class = "row">
+			<h2 align = "center">Make a camera Head Band</h2>
+		</div>
+
+		<div class="container theme-showcase" role="main">
+			<div id = "about" class="page-header">
+				<h3>Ingredients:</h3>
+			</div>
+			<div class="well">
+				<ol>
+					<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.26d25bcfUnIv3H&id=560875035281&_u=72i0m464449d">arduino mini pro</a> &times;1</li>
+					<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.26d25bcfUnIv3H&id=40650349043&_u=72i0m46442d6">camera vcvc0706 (with fifo)</a> &times;1</li>
+					<li>ultrasonic sensor HC-SR04 &times;1</li>
+					<li><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.26d25bcfUnIv3H&id=546311303178&_u=72i0m4641b62">micro SD card shield</a> &times;1</li>
+					<li>a beeper with source</li>
+					<li><a href"https://item.taobao.com/item.htm?spm=a1z09.2.0.0.26d25bcfUnIv3H&id=546315923968&_u=72i0m464661e">protecting board for li-ion battery</a> &times;1</li>
+					<li>a fine li-ion battery</li>
+					<li>3D printer &times;1</li>
+					<li>laser cutter for the head band base.</li>
+					<li>Arduino IDE</li>
+				</ol>
+			</div>
+			<div id = "about" class="page-header">
+				<h3>Connections:</h3>
+			</div>
+			<div class="well">
+				<p>the pins which was connected on the arduino mini pro board is shown below:</p>
+				<img src="picture/tutorial/wire_connections.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<p>try connect the wires but do not solider them.</p>
+			</div>
+			<div id = "about" class="page-header">
+				<h3>Programs:</h3>
+			</div>
+			<div class="well">
+				<p>Download <a href="code/libraries.zip"><strong>these libraries</strong></a> first, and install them in the arduino IDE. By installing, just move the unzipped folder to the Arduino/lib folder where you install your arduino IDE.</p>
+				<p>Then, download <a href="code/codes4camera_band.zip"><strong>these code</strong></a> for testing the connections and for the final product. By the way, you can download <a href="code/test4camera_band_components.zip"><strong>these</strong></a> if you want to test the camera, the sensor and the SD card module seperately. But I won't be sure that these codes work.</p>
+			</div>
+			<div id = "about" class="page-header">
+				<h3>Solid part design:</h3>
+			</div>
+			<div class="well">
+				<p>First, desgin the head band base using laser cutter. I use the Rhino for the desgin and expor the .dxf file to the printer.
+				<img src="picture/tutorial/head-band-base-desgin.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<p>I desgin it base on the 3D scan of my head. You can change the scale if you like, but <strong>remember not to change the scale of the joints!</strong></p>
+				<p>Then here is the joints for the 3D print part.</p>
+				<img src="picture/tutorial/joints-desgin.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<p>And all the other components are in the following files, which you can download the source file editing by Rhino.</p>
+				<img src="picture/tutorial/bases-all-together.PNG"
+					 width="500"
+					 style="display:block; margin:auto">
+				<p>The link is <a href="code/camera-band-solid-desgin.zip"><strong>Here</strong></a>. If you are lucky enough to use the xyz printer to print the 3D bases, there is a .stl file to print all the bases together.</p>
+			</div>
+			<div id = "about" class="page-header">
+				<h3>Reference:</h3>
+			</div>
+			<div class="well">
+				<p><a href="http://blog.sina.com.cn/s/blog_85ffdf8a0102vni0.html">http://blog.sina.com.cn/s/blog_85ffdf8a0102vni0.html</a></p>
+				<p><a href="http://openjumper.cn/arduino-camera/">http://openjumper.cn/arduino-camera/</a></p>
+			</div>
+		</div>
+		
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/docs.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
